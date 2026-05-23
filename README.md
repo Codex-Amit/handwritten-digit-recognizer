@@ -67,7 +67,7 @@ handwritten-digit-recognizer/
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/your_username/handwritten-digit-recognizer.git
+git clone https://github.com/Codex-Amit/handwritten-digit-recognizer.git
 cd handwritten-digit-recognizer
 pip install -r requirements.txt
 ```
