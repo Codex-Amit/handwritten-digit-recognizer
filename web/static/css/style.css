@@ -1,0 +1,28 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0f0f13; color: #e8e8f0;
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+}
+.container { width: 100%; max-width: 780px; padding: 2rem; }
+header { text-align: center; margin-bottom: 2.5rem; }
+header h1 { font-size: 2rem; font-weight: 700; }
+header p  { margin-top: .5rem; color: #888; font-size: .95rem; }
+.workspace { display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; justify-content: center; }
+.canvas-wrapper { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+#canvas { background: #1a1a24; border: 2px solid #2e2e40; border-radius: 12px; cursor: crosshair; touch-action: none; }
+.btn-row { display: flex; gap: .75rem; }
+button { padding: .55rem 1.4rem; border: 1.5px solid #3a3a52; border-radius: 8px; background: transparent; color: #ccc; font-size: .9rem; cursor: pointer; transition: all .15s; }
+button:hover { border-color: #666; color: #fff; }
+button.primary { background: #5b5bd6; border-color: #5b5bd6; color: #fff; }
+button.primary:hover { background: #6e6ee8; }
+.result-panel { flex: 1; min-width: 220px; display: flex; flex-direction: column; align-items: center; gap: 1rem; padding-top: .5rem; }
+.prediction { font-size: 7rem; font-weight: 800; line-height: 1; color: #5b5bd6; letter-spacing: -4px; }
+.confidence { font-size: .9rem; color: #888; min-height: 1.2em; }
+.bar-chart { width: 100%; display: flex; flex-direction: column; gap: 4px; }
+.bar-row { display: flex; align-items: center; gap: 8px; font-size: .78rem; }
+.bar-label { width: 14px; text-align: right; color: #aaa; }
+.bar-track { flex: 1; height: 10px; background: #1e1e2a; border-radius: 5px; overflow: hidden; }
+.bar-fill { height: 100%; background: #5b5bd6; border-radius: 5px; transition: width .35s ease; }
+.bar-row.highlight .bar-fill { background: #a78bfa; }
+.bar-pct { width: 36px; text-align: right; color: #666; font-size: .75rem; }
